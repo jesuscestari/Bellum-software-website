@@ -1,12 +1,6 @@
 import Member from "components/app/about-team/member/member";
-import MarcFace from "public/team/marc-face.svg";
-import SzymonFace from "public/team/szymon-face.svg";
-import ThomasFace from "public/team/thomas-face.svg";
 import ChristophFace from "public/team/christoph-face.svg";
 import JanicFace from "public/team/janic-face.svg";
-import CatalinFace from "public/team/catalin-face.svg";
-import MoFace from "public/team/mo-face.svg";
-import EricFace from "public/team/eric-face.svg";
 import MateiFace from "public/team/matei-face.svg";
 import ViktoriaFace from "public/team/viktoria-face.svg";
 

@@ -1,4 +1,3 @@
-import ClientsLogos from "components/app/clients/clients-logos/clients-logos";
 import Image from "next/image";
 
 const Clients = async () => {
