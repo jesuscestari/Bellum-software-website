@@ -39,7 +39,7 @@ export async function POST(request: NextRequest) {
     // Enviar el email usando Resend
     const data = await resend.emails.send({
       from: "Bellum Software <onboarding@resend.dev>",
-      to: ["bellum.software@gmail.com"],
+      to: ["jescesta@gmail.com"],
       subject: `Nuevo mensaje de contacto de ${companyName}`,
       html: `
         <h2>Nuevo mensaje de contacto</h2>

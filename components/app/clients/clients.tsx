@@ -1,16 +1,14 @@
 import Image from "next/image";
 
-// Rutas de las imágenes de los proyectos
-const PROJECT_IMAGES = {
-  boda: "/projects/boda-screenshot.webp",
-  sologeneradores: "/projects/sologeneradores-screenshot.webp",
-  perfumesivilara: "/projects/perfumesivilara-screenshot.webp",
-  clinicaoe: "/projects/clinicaoe-screenshot.webp",
-  petgeove: "/projects/petgeove-screenshot.webp",
-  englishbyclau: "/projects/englishbyclau-screenshot.webp",
-  selectstructural: "/projects/selectstructural-screenshot.webp",
-  engassistusa: "/projects/engassistusa-screenshot.webp",
-};
+// Importar imágenes directamente
+import BodaScreenshot from "public/projects/boda-screenshot.webp";
+import SologeneradoresScreenshot from "public/projects/sologeneradores-screenshot.webp";
+import PerfumesivilaraScreenshot from "public/projects/perfumesivilara-screenshot.webp";
+import ClinicaoeScreenshot from "public/projects/clinicaoe-screenshot.webp";
+import PetgeoveScreenshot from "public/projects/petgeove-screenshot.webp";
+import EnglishbyclauScreenshot from "public/projects/englishbyclau-screenshot.webp";
+import SelectstructuralScreenshot from "public/projects/selectstructural-screenshot.webp";
+import EngassistusaScreenshot from "public/projects/engassistusa-screenshot.webp";
 
 const Clients = async () => {
   return (
@@ -30,11 +28,12 @@ const Clients = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={PROJECT_IMAGES.boda}
+                src={BodaScreenshot}
                 alt="Sitio de Bodas"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover"
+                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">Sitio de Bodas</h3>
@@ -52,11 +51,12 @@ const Clients = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={PROJECT_IMAGES.sologeneradores}
+                src={SologeneradoresScreenshot}
                 alt="Solo Generadores"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover"
+                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">Solo Generadores</h3>
@@ -74,11 +74,12 @@ const Clients = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={PROJECT_IMAGES.perfumesivilara}
+                src={PerfumesivilaraScreenshot}
                 alt="Perfumes Ivilara"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover"
+                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">Perfumes Ivilara</h3>
@@ -96,11 +97,12 @@ const Clients = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={PROJECT_IMAGES.clinicaoe}
+                src={ClinicaoeScreenshot}
                 alt="Clínica OE"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover"
+                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">Clínica OE</h3>
@@ -118,11 +120,12 @@ const Clients = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={PROJECT_IMAGES.petgeove}
+                src={PetgeoveScreenshot}
                 alt="Pet Geove"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover"
+                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">Pet Geove</h3>
@@ -140,11 +143,12 @@ const Clients = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={PROJECT_IMAGES.englishbyclau}
+                src={EnglishbyclauScreenshot}
                 alt="English by Clau Academy"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover"
+                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">
@@ -164,11 +168,12 @@ const Clients = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={PROJECT_IMAGES.selectstructural}
+                src={SelectstructuralScreenshot}
                 alt="Select Structural"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover"
+                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">Select Structural</h3>
@@ -186,11 +191,12 @@ const Clients = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={PROJECT_IMAGES.engassistusa}
+                src={EngassistusaScreenshot}
                 alt="Eng Assist USA"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover"
+                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">Eng Assist USA</h3>
