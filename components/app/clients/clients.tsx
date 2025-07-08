@@ -1,14 +1,14 @@
 import Image from "next/image";
 
-// Importar imágenes directamente
-import BodaScreenshot from "public/projects/boda-screenshot.webp";
-import SologeneradoresScreenshot from "public/projects/sologeneradores-screenshot.webp";
-import PerfumesivilaraScreenshot from "public/projects/perfumesivilara-screenshot.webp";
-import ClinicaoeScreenshot from "public/projects/clinicaoe-screenshot.webp";
-import PetgeoveScreenshot from "public/projects/petgeove-screenshot.webp";
-import EnglishbyclauScreenshot from "public/projects/englishbyclau-screenshot.webp";
-import SelectstructuralScreenshot from "public/projects/selectstructural-screenshot.webp";
-import EngassistusaScreenshot from "public/projects/engassistusa-screenshot.webp";
+// Importar imágenes directamente con rutas relativas
+import BodaScreenshot from "../../../public/projects/boda-screenshot.webp";
+import SologeneradoresScreenshot from "../../../public/projects/sologeneradores-screenshot.webp";
+import PerfumesivilaraScreenshot from "../../../public/projects/perfumesivilara-screenshot.webp";
+import ClinicaoeScreenshot from "../../../public/projects/clinicaoe-screenshot.webp";
+import PetgeoveScreenshot from "../../../public/projects/petgeove-screenshot.webp";
+import EnglishbyclauScreenshot from "../../../public/projects/englishbyclau-screenshot.webp";
+import SelectstructuralScreenshot from "../../../public/projects/selectstructural-screenshot.webp";
+import EngassistusaScreenshot from "../../../public/projects/engassistusa-screenshot.webp";
 
 const Clients = async () => {
   return (
