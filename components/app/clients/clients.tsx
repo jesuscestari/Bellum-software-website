@@ -1,4 +1,17 @@
+import ClientsLogos from "components/app/clients/clients-logos/clients-logos";
 import Image from "next/image";
+
+// Rutas de las imágenes de los proyectos
+const PROJECT_IMAGES = {
+  boda: "/projects/boda-screenshot.webp",
+  sologeneradores: "/projects/sologeneradores-screenshot.webp",
+  perfumesivilara: "/projects/perfumesivilara-screenshot.webp",
+  clinicaoe: "/projects/clinicaoe-screenshot.webp",
+  petgeove: "/projects/petgeove-screenshot.webp",
+  englishbyclau: "/projects/englishbyclau-screenshot.webp",
+  selectstructural: "/projects/selectstructural-screenshot.webp",
+  engassistusa: "/projects/engassistusa-screenshot.webp",
+};
 
 const Clients = async () => {
   return (
@@ -18,7 +31,7 @@ const Clients = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src="/projects/boda-screenshot.webp"
+                src={PROJECT_IMAGES.boda}
                 alt="Sitio de Bodas"
                 width={400}
                 height={300}
@@ -40,7 +53,7 @@ const Clients = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src="/projects/sologeneradores-screenshot.webp"
+                src={PROJECT_IMAGES.sologeneradores}
                 alt="Solo Generadores"
                 width={400}
                 height={300}
@@ -62,7 +75,7 @@ const Clients = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src="/projects/perfumesivilara-screenshot.webp"
+                src={PROJECT_IMAGES.perfumesivilara}
                 alt="Perfumes Ivilara"
                 width={400}
                 height={300}
@@ -84,7 +97,7 @@ const Clients = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src="/projects/clinicaoe-screenshot.webp"
+                src={PROJECT_IMAGES.clinicaoe}
                 alt="Clínica OE"
                 width={400}
                 height={300}
@@ -106,7 +119,7 @@ const Clients = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src="/projects/petgeove-screenshot.webp"
+                src={PROJECT_IMAGES.petgeove}
                 alt="Pet Geove"
                 width={400}
                 height={300}
@@ -128,7 +141,7 @@ const Clients = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src="/projects/englishbyclau-screenshot.webp"
+                src={PROJECT_IMAGES.englishbyclau}
                 alt="English by Clau Academy"
                 width={400}
                 height={300}
@@ -152,7 +165,7 @@ const Clients = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src="/projects/selectstructural-screenshot.webp"
+                src={PROJECT_IMAGES.selectstructural}
                 alt="Select Structural"
                 width={400}
                 height={300}
@@ -174,7 +187,7 @@ const Clients = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src="/projects/engassistusa-screenshot.webp"
+                src={PROJECT_IMAGES.engassistusa}
                 alt="Eng Assist USA"
                 width={400}
                 height={300}
