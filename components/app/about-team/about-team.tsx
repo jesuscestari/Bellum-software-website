@@ -21,7 +21,7 @@ const AboutTeam = async () => {
           </h2>
           <p className="text-xl">the &ldquo;spec-ops&rdquo;</p>
         </div>
-        <section className="grid grid-cols-2 gap-8 sm:grid-cols-12 md:grid-cols-4 lg:grid-cols-4 lg:gap-20">
+        <section className="grid grid-cols-2 gap-8 sm:grid-cols-12 md:grid-cols-4 lg:grid-cols-4 lg:gap-20 pointer-events-none">
           <Member name="Jesus" image={ChristophFace} socialId="Full Stack" />
           <Member name="Alejandro" image={JanicFace} socialId="Full Stack" />
           <Member name="Daniela" image={ViktoriaFace} socialId="Marketing" />

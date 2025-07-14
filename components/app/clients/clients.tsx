@@ -21,6 +21,28 @@ const Clients = async () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {/* Proyecto 1 */}
           <a
+            href="https://elmenu.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
+          >
+            <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+              <Image
+                src={EngassistusaScreenshot}
+                alt="elmenu.app"
+                width={400}
+                height={300}
+                className="w-full h-full object-cover pointer-events-none"
+                placeholder="blur"
+              />
+            </div>
+            <h3 className="text-lg font-semibold mb-2">elmenu.app</h3>
+            <p className="text-gray-600 text-sm">
+              Sitio web y aplicacion hecha a medida.
+            </p>
+          </a>
+          {/* Proyecto 2 */}
+          <a
             href="https://boda-khaki.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
@@ -32,7 +54,7 @@ const Clients = async () => {
                 alt="Sitio de Bodas"
                 width={400}
                 height={300}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover pointer-events-none"
                 placeholder="blur"
               />
             </div>
@@ -42,7 +64,7 @@ const Clients = async () => {
             </p>
           </a>
 
-          {/* Proyecto 2 */}
+          {/* Proyecto 3 */}
           <a
             href="https://www.sologeneradores.com/"
             target="_blank"
@@ -55,7 +77,7 @@ const Clients = async () => {
                 alt="Solo Generadores"
                 width={400}
                 height={300}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover pointer-events-none"
                 placeholder="blur"
               />
             </div>
@@ -65,7 +87,7 @@ const Clients = async () => {
             </p>
           </a>
 
-          {/* Proyecto 3 */}
+          {/* Proyecto 4 */}
           <a
             href="https://www.perfumesivilara.com/"
             target="_blank"
@@ -78,7 +100,7 @@ const Clients = async () => {
                 alt="Perfumes Ivilara"
                 width={400}
                 height={300}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover pointer-events-none"
                 placeholder="blur"
               />
             </div>
@@ -88,7 +110,7 @@ const Clients = async () => {
             </p>
           </a>
 
-          {/* Proyecto 4 */}
+          {/* Proyecto 5 */}
           <a
             href="https://clinicaoe.com.ar/"
             target="_blank"
@@ -101,7 +123,7 @@ const Clients = async () => {
                 alt="Clínica OE"
                 width={400}
                 height={300}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover pointer-events-none"
                 placeholder="blur"
               />
             </div>
@@ -111,7 +133,7 @@ const Clients = async () => {
             </p>
           </a>
 
-          {/* Proyecto 5 */}
+          {/* Proyecto 6 */}
           <a
             href="https://www.petgeove.com/"
             target="_blank"
@@ -134,7 +156,7 @@ const Clients = async () => {
             </p>
           </a>
 
-          {/* Proyecto 6 */}
+          {/* Proyecto 7 */}
           <a
             href="https://www.englishbyclauacademy.com/"
             target="_blank"
@@ -147,7 +169,7 @@ const Clients = async () => {
                 alt="English by Clau Academy"
                 width={400}
                 height={300}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover pointer-events-none"
                 placeholder="blur"
               />
             </div>
@@ -159,7 +181,7 @@ const Clients = async () => {
             </p>
           </a>
 
-          {/* Proyecto 7 */}
+          {/* Proyecto 8 */}
           <a
             href="https://www.selectstructural.com/"
             target="_blank"
@@ -172,36 +194,13 @@ const Clients = async () => {
                 alt="Select Structural"
                 width={400}
                 height={300}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover pointer-events-none"
                 placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">Select Structural</h3>
             <p className="text-gray-600 text-sm">
               Empresa de ingeniería estructural y construcción
-            </p>
-          </a>
-
-          {/* Proyecto 8 */}
-          <a
-            href="https://www.engassistusa.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
-          >
-            <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-              <Image
-                src={EngassistusaScreenshot}
-                alt="Eng Assist USA"
-                width={400}
-                height={300}
-                className="w-full h-full object-cover"
-                placeholder="blur"
-              />
-            </div>
-            <h3 className="text-lg font-semibold mb-2">Eng Assist USA</h3>
-            <p className="text-gray-600 text-sm">
-              Servicios de asistencia técnica e ingeniería
             </p>
           </a>
         </div>
