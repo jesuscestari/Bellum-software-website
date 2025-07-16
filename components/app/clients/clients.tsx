@@ -21,7 +21,7 @@ const Clients = async () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {/* Proyecto 1 */}
           <a
-            href="#"
+            href="https://elmenu.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
@@ -43,7 +43,7 @@ const Clients = async () => {
           </a>
           {/* Proyecto 2 */}
           <a
-            href="#"
+            href="https://boda-khaki.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
@@ -66,7 +66,7 @@ const Clients = async () => {
 
           {/* Proyecto 3 */}
           <a
-            href="#"
+            href="https://www.sologeneradores.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
@@ -89,7 +89,7 @@ const Clients = async () => {
 
           {/* Proyecto 4 */}
           <a
-            href="#"
+            href="https://www.perfumesivilara.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
@@ -112,7 +112,7 @@ const Clients = async () => {
 
           {/* Proyecto 5 */}
           <a
-            href="#"
+            href="https://clinicaoe.com.ar/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
@@ -135,7 +135,7 @@ const Clients = async () => {
 
           {/* Proyecto 6 */}
           <a
-            href="#"
+            href="https://www.petgeove.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
@@ -158,7 +158,7 @@ const Clients = async () => {
 
           {/* Proyecto 7 */}
           <a
-            href="#"
+            href="https://www.englishbyclauacademy.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
@@ -183,7 +183,7 @@ const Clients = async () => {
 
           {/* Proyecto 8 */}
           <a
-            href="#"
+            href="https://www.selectstructural.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
