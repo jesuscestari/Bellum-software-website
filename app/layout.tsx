@@ -30,9 +30,8 @@ export const metadata: Metadata = {
       "Bellum - Agencia de Software en Argentina | Desarrollo Web, Tiendas Online y Consultoría",
     "og:description":
       "Agencia de software en Argentina especializada en desarrollo de páginas web, tiendas online, consultoría tecnológica y soluciones digitales para negocios.",
-    "og:url": "https://bellum-software.vercel.app/",
-    "og:image":
-      "https://ogcdn.net/6064b869-74ed-4eb9-b76c-0b701ffe7e6b/v4/software-agency-website.vercel.app/Margelo%20Software%20Agency%20Webiste/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fdocuments%2F71222441-43b8-421c-8aae-79903482f117.jpg%3Ftoken%3DZgMguuKUga-2aLUMYGkbGQwDbdvoha_MJo-CmtsXKzU%26height%3D675%26width%3D1200%26expires%3D33244784186/og.png",
+    "og:url": "https://bellumsoftware.com/",
+
     "og:type": "website",
   },
 };
