@@ -18,7 +18,7 @@ const ProyectosPage = async () => {
       {/* Enlace de volver al inicio */}
       <Link
         href="/"
-        className="absolute top-12 left-8 flex items-center gap-2 text-gray-600 hover:text-black transition-colors duration-200 z-10"
+        className="absolute top-10 left-8 flex items-center gap-2 text-gray-600 hover:text-black transition-colors duration-200 z-10"
       >
         <MdArrowBack className="text-xl" />
         <span className="text-sm font-medium">Volver a inicio</span>
