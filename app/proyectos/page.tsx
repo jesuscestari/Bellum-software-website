@@ -1,18 +1,29 @@
 import Image from "next/image";
+import Link from "next/link";
+import { MdArrowBack } from "react-icons/md";
 
 // Importar imágenes directamente con rutas relativas
-import BodaScreenshot from "../../../public/projects/boda-screenshot.webp";
-import SologeneradoresScreenshot from "../../../public/projects/sologeneradores-screenshot.webp";
-import PerfumesivilaraScreenshot from "../../../public/projects/perfumesivilara-screenshot.webp";
-import ClinicaoeScreenshot from "../../../public/projects/clinicaoe-screenshot.webp";
-import ConterraScreenshot from "../../../public/projects/conterra-screenshot.webp";
-import EnglishbyclauScreenshot from "../../../public/projects/englishbyclau-screenshot.webp";
-import SelectstructuralScreenshot from "../../../public/projects/selectstructural-screenshot.webp";
-import EngassistusaScreenshot from "../../../public/projects/engassistusa-screenshot.webp";
+import BodaScreenshot from "../../public/projects/boda-screenshot.webp";
+import SologeneradoresScreenshot from "../../public/projects/sologeneradores-screenshot.webp";
+import PerfumesivilaraScreenshot from "../../public/projects/perfumesivilara-screenshot.webp";
+import ClinicaoeScreenshot from "../../public/projects/clinicaoe-screenshot.webp";
+import ConterraScreenshot from "../../public/projects/conterra-screenshot.webp";
+import EnglishbyclauScreenshot from "../../public/projects/englishbyclau-screenshot.webp";
+import SelectstructuralScreenshot from "../../public/projects/selectstructural-screenshot.webp";
+import EngassistusaScreenshot from "../../public/projects/engassistusa-screenshot.webp";
 
-const Clients = async () => {
+const ProyectosPage = async () => {
   return (
-    <section className="min-h-screen bg-white text-black flex flex-col justify-center items-center py-20">
+    <section className="min-h-screen bg-white text-black flex flex-col justify-center items-center py-20 relative">
+      {/* Enlace de volver al inicio */}
+      <Link
+        href="/"
+        className="absolute top-12 left-8 flex items-center gap-2 text-gray-600 hover:text-black transition-colors duration-200 z-10"
+      >
+        <MdArrowBack className="text-xl" />
+        <span className="text-sm font-medium">Volver a inicio</span>
+      </Link>
+
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-16 lg:text-5xl">
           Ultimos Proyectos
@@ -64,7 +75,8 @@ const Clients = async () => {
               Sitio web y aplicacion hecha a medida.
             </p>
           </a>
-          {/* Proyecto 2 */}
+
+          {/* Proyecto 3 */}
           <a
             href="https://boda-khaki.vercel.app/"
             target="_blank"
@@ -156,7 +168,7 @@ const Clients = async () => {
             </p>
           </a>
 
-          {/* Proyecto 8 */}
+          {/* Proyecto 7 */}
           <a
             href="https://www.englishbyclauacademy.com/"
             target="_blank"
@@ -181,7 +193,7 @@ const Clients = async () => {
             </p>
           </a>
 
-          {/* Proyecto 9 */}
+          {/* Proyecto 8 */}
           <a
             href="https://www.selectstructural.com/"
             target="_blank"
@@ -209,4 +221,4 @@ const Clients = async () => {
   );
 };
 
-export default Clients;
+export default ProyectosPage;

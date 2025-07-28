@@ -7,6 +7,7 @@ const Footer = async () => {
     <footer className="bg-black text-white flex justify-around items-center py-10 md:justify-center md:gap-8">
       <Image src={MargeloLogo} width={20} height={20} alt="margelo-logo" />
 
+      <Link href="/proyectos">Proyectos</Link>
       <Link href="/privacy-policy">Política de privacidad</Link>
       <Link href="https://www.instagram.com/bellumweb/" target="_blank">
         Instagram
