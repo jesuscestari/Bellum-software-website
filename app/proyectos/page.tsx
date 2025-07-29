@@ -32,7 +32,7 @@ const ProyectosPage = async () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {/* Proyecto 1*/}
           <a
-            href="https://conterra.netlify.app/"
+            href="https://conterradesarrollos.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
