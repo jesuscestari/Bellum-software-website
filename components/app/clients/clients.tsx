@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 // Importar imágenes directamente con rutas relativas
 import BodaScreenshot from "../../../public/projects/boda-screenshot.webp";
@@ -9,6 +10,7 @@ import ConterraScreenshot from "../../../public/projects/conterra-screenshot.web
 import EnglishbyclauScreenshot from "../../../public/projects/englishbyclau-screenshot.webp";
 import SelectstructuralScreenshot from "../../../public/projects/selectstructural-screenshot.webp";
 import EngassistusaScreenshot from "../../../public/projects/engassistusa-screenshot.webp";
+import FloraScreenshot from "../../../public/projects/flora.png";
 
 const Clients = async () => {
   return (
@@ -19,7 +21,32 @@ const Clients = async () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          {/* Proyecto 1*/}
+          {/* Proyecto 1 - Arquitectura emocional */}
+          <a
+            href="https://floraguerra.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
+          >
+            <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+              <Image
+                src={FloraScreenshot}
+                alt="Arquitectura emocional"
+                width={400}
+                height={300}
+                className="w-full h-full object-cover"
+                placeholder="blur"
+              />
+            </div>
+            <h3 className="text-lg font-semibold mb-2">
+              Arquitectura emocional
+            </h3>
+            <p className="text-gray-600 text-sm">
+              Sitio web elegante y moderno para Flora Guerra.
+            </p>
+          </a>
+
+          {/* Proyecto 2 - Conterra Desarrollos */}
           <a
             href="https://conterradesarrollos.com/"
             target="_blank"
@@ -42,7 +69,7 @@ const Clients = async () => {
             </p>
           </a>
 
-          {/* Proyecto 2 */}
+          {/* Proyecto 3 - elmenu.app */}
           <a
             href="https://elmenu.app/"
             target="_blank"
@@ -64,7 +91,8 @@ const Clients = async () => {
               Sitio web y aplicacion hecha a medida.
             </p>
           </a>
-          {/* Proyecto 2 */}
+
+          {/* Proyecto 4 - Sitio de Bodas */}
           <a
             href="https://boda-khaki.vercel.app/"
             target="_blank"
@@ -86,123 +114,16 @@ const Clients = async () => {
               Sitio web elegante para organización de bodas
             </p>
           </a>
+        </div>
 
-          {/* Proyecto 4 */}
-          <a
-            href="https://www.sologeneradores.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
+        {/* Botón "Ver todos los proyectos" */}
+        <div className="text-center mt-12">
+          <Link
+            href="/proyectos"
+            className="inline-block bg-black text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-200 font-medium"
           >
-            <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-              <Image
-                src={SologeneradoresScreenshot}
-                alt="Solo Generadores"
-                width={400}
-                height={300}
-                className="w-full h-full object-cover pointer-events-none"
-                placeholder="blur"
-              />
-            </div>
-            <h3 className="text-lg font-semibold mb-2">Solo Generadores</h3>
-            <p className="text-gray-600 text-sm">
-              Sitio web especializado en generadores eléctricos
-            </p>
-          </a>
-
-          {/* Proyecto 5 */}
-          <a
-            href="https://www.perfumesivilara.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
-          >
-            <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-              <Image
-                src={PerfumesivilaraScreenshot}
-                alt="Perfumes Ivilara"
-                width={400}
-                height={300}
-                className="w-full h-full object-cover pointer-events-none"
-                placeholder="blur"
-              />
-            </div>
-            <h3 className="text-lg font-semibold mb-2">Perfumes Ivilara</h3>
-            <p className="text-gray-600 text-sm">
-              Tienda online de perfumes y fragancias premium
-            </p>
-          </a>
-
-          {/* Proyecto 6 */}
-          <a
-            href="https://clinicaoe.com.ar/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
-          >
-            <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-              <Image
-                src={ClinicaoeScreenshot}
-                alt="Clínica OE"
-                width={400}
-                height={300}
-                className="w-full h-full object-cover pointer-events-none"
-                placeholder="blur"
-              />
-            </div>
-            <h3 className="text-lg font-semibold mb-2">Clínica OE</h3>
-            <p className="text-gray-600 text-sm">
-              Sitio web profesional para clínica médica
-            </p>
-          </a>
-
-          {/* Proyecto 8 */}
-          <a
-            href="https://www.englishbyclauacademy.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
-          >
-            <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-              <Image
-                src={EnglishbyclauScreenshot}
-                alt="English by Clau Academy"
-                width={400}
-                height={300}
-                className="w-full h-full object-cover pointer-events-none"
-                placeholder="blur"
-              />
-            </div>
-            <h3 className="text-lg font-semibold mb-2">
-              English by Clau Academy
-            </h3>
-            <p className="text-gray-600 text-sm">
-              Academia online para aprendizaje de inglés
-            </p>
-          </a>
-
-          {/* Proyecto 9 */}
-          <a
-            href="https://www.selectstructural.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
-          >
-            <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-              <Image
-                src={SelectstructuralScreenshot}
-                alt="Select Structural"
-                width={400}
-                height={300}
-                className="w-full h-full object-cover pointer-events-none"
-                placeholder="blur"
-              />
-            </div>
-            <h3 className="text-lg font-semibold mb-2">Select Structural</h3>
-            <p className="text-gray-600 text-sm">
-              Empresa de ingeniería estructural y construcción
-            </p>
-          </a>
+            Ver todos los proyectos
+          </Link>
         </div>
       </div>
     </section>

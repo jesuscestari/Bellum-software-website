@@ -11,6 +11,7 @@ import ConterraScreenshot from "../../public/projects/conterra-screenshot.webp";
 import EnglishbyclauScreenshot from "../../public/projects/englishbyclau-screenshot.webp";
 import SelectstructuralScreenshot from "../../public/projects/selectstructural-screenshot.webp";
 import EngassistusaScreenshot from "../../public/projects/engassistusa-screenshot.webp";
+import FloraScreenshot from "../../public/projects/flora.png";
 
 const ProyectosPage = async () => {
   return (
@@ -30,7 +31,32 @@ const ProyectosPage = async () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          {/* Proyecto 1*/}
+          {/* Proyecto 1 - Arquitectura emocional */}
+          <a
+            href="https://floraguerra.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
+          >
+            <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+              <Image
+                src={FloraScreenshot}
+                alt="Arquitectura emocional"
+                width={400}
+                height={300}
+                className="w-full h-full object-cover"
+                placeholder="blur"
+              />
+            </div>
+            <h3 className="text-lg font-semibold mb-2">
+              Arquitectura emocional
+            </h3>
+            <p className="text-gray-600 text-sm">
+              Sitio web elegante y moderno para Flora Guerra.
+            </p>
+          </a>
+
+          {/* Proyecto 2 - Conterra Desarrollos */}
           <a
             href="https://conterradesarrollos.com/"
             target="_blank"
@@ -53,7 +79,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 2 */}
+          {/* Proyecto 3 - elmenu.app */}
           <a
             href="https://elmenu.app/"
             target="_blank"
@@ -76,7 +102,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 3 */}
+          {/* Proyecto 4 - Sitio de Bodas */}
           <a
             href="https://boda-khaki.vercel.app/"
             target="_blank"
@@ -99,7 +125,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 4 */}
+          {/* Proyecto 5 - Solo Generadores */}
           <a
             href="https://www.sologeneradores.com/"
             target="_blank"
@@ -122,7 +148,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 5 */}
+          {/* Proyecto 6 - Perfumes Ivilara */}
           <a
             href="https://www.perfumesivilara.com/"
             target="_blank"
@@ -145,7 +171,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 6 */}
+          {/* Proyecto 7 - Clínica OE */}
           <a
             href="https://clinicaoe.com.ar/"
             target="_blank"
@@ -168,7 +194,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 7 */}
+          {/* Proyecto 8 - English by Clau Academy */}
           <a
             href="https://www.englishbyclauacademy.com/"
             target="_blank"
@@ -193,7 +219,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 8 */}
+          {/* Proyecto 9 - Select Structural */}
           <a
             href="https://www.selectstructural.com/"
             target="_blank"
