@@ -12,6 +12,7 @@ import EnglishbyclauScreenshot from "../../public/projects/englishbyclau-screens
 import SelectstructuralScreenshot from "../../public/projects/selectstructural-screenshot.webp";
 import EngassistusaScreenshot from "../../public/projects/engassistusa-screenshot.webp";
 import FloraScreenshot from "../../public/projects/flora.png";
+import LenerziScreenshot from "../../public/projects/lenerzi.png";
 
 const ProyectosPage = async () => {
   return (
@@ -239,6 +240,29 @@ const ProyectosPage = async () => {
             <h3 className="text-lg font-semibold mb-2">Select Structural</h3>
             <p className="text-gray-600 text-sm">
               Empresa de ingeniería estructural y construcción
+            </p>
+          </a>
+          
+          {/* Proyecto 10 - Lenerzi */}
+          <a
+            href="https://www.lenerzi.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
+          >
+            <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+              <Image
+                src={LenerziScreenshot}
+                alt="Lenerzi"
+                width={400}
+                height={300}
+                className="w-full h-full object-cover"
+                placeholder="blur"
+              />
+            </div>
+            <h3 className="text-lg font-semibold mb-2">Lenerzi</h3>
+            <p className="text-gray-600 text-sm">
+              Sitio web para Lenerzi.
             </p>
           </a>
         </div>
