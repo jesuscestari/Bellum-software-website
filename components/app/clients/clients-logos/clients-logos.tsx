@@ -1,25 +1,25 @@
 import Image from "next/image";
 import SliderContainer from "components/app/clients/slider-container/slider-container";
 import SliderItem from "components/app/clients/slider-item/slider-item";
-import AudubonLogo from "public/logos/audubon-company.webp";
-import CoinBaseLogo from "public/logos/coinbase-company.webp";
-import ExodusLogo from "public/logos/exodus-company.webp";
-import ExpensifyLogo from "public/logos/expensify-company.webp";
-import ExtraLogo from "public/logos/extra-company.webp";
-import LitentryLogo from "public/logos/litentry-company.webp";
-import PicnicLogo from "public/logos/picnic-company.webp";
-import PinkPandaLogo from "public/logos/pinkpanda-company.webp";
-import RainbowLogo from "public/logos/rainbow-company.webp";
-import ScribewareLogo from "public/logos/scribeware-company.webp";
-import ShopifyLogo from "public/logos/shopify-company.webp";
-import ShowTimeLogo from "public/logos/showtime-company.webp";
-import SlingShotLogo from "public/logos/slingshot-company.webp";
-import SnapCalorieLogo from "public/logos/snapcalorie-company.webp";
-import StatusLogo from "public/logos/status-company.webp";
-import SteakWalletLogo from "public/logos/steakwallet-company.webp";
-import StoriLogo from "public/logos/stori-company.webp";
-import TocsenLogo from "public/logos/tocsen-company.webp";
-import WalletConnectLogo from "public/logos/walletconnect-company.webp";
+// import AudubonLogo from "public/logos/audubon-company.webp";
+// import CoinBaseLogo from "public/logos/coinbase-company.webp";
+// import ExodusLogo from "public/logos/exodus-company.webp";
+// import ExpensifyLogo from "public/logos/expensify-company.webp";
+// import ExtraLogo from "public/logos/extra-company.webp";
+// import LitentryLogo from "public/logos/litentry-company.webp";
+// import PicnicLogo from "public/logos/picnic-company.webp";
+// import PinkPandaLogo from "public/logos/pinkpanda-company.webp";
+// import RainbowLogo from "public/logos/rainbow-company.webp";
+// import ScribewareLogo from "public/logos/scribeware-company.webp";
+// import ShopifyLogo from "public/logos/shopify-company.webp";
+// import ShowTimeLogo from "public/logos/showtime-company.webp";
+// import SlingShotLogo from "public/logos/slingshot-company.webp";
+// import SnapCalorieLogo from "public/logos/snapcalorie-company.webp";
+// import StatusLogo from "public/logos/status-company.webp";
+// import SteakWalletLogo from "public/logos/steakwallet-company.webp";
+// import StoriLogo from "public/logos/stori-company.webp";
+// import TocsenLogo from "public/logos/tocsen-company.webp";
+// import WalletConnectLogo from "public/logos/walletconnect-company.webp";
 
 const ClientsLogos = async () => {
   return (
@@ -27,7 +27,7 @@ const ClientsLogos = async () => {
       <SliderContainer initialOffsetX={0} contentWidth={1290}>
         <SliderItem width={150}>
           <Image
-            src={AudubonLogo}
+            src="/logos/audubon-company.webp"
             style={{
               objectFit: "contain",
             }}
@@ -36,7 +36,7 @@ const ClientsLogos = async () => {
         </SliderItem>
         <SliderItem width={150}>
           <Image
-            src={CoinBaseLogo}
+            src="/logos/coinbase-company.webp"
             style={{
               objectFit: "contain",
             }}
@@ -45,7 +45,7 @@ const ClientsLogos = async () => {
         </SliderItem>
         <SliderItem width={150}>
           <Image
-            src={ExodusLogo}
+            src="/logos/exodus-company.webp"
             style={{
               objectFit: "contain",
             }}
@@ -54,7 +54,7 @@ const ClientsLogos = async () => {
         </SliderItem>
         <SliderItem width={150}>
           <Image
-            src={ExpensifyLogo}
+            src="/logos/expensify-company.webp"
             style={{
               objectFit: "contain",
             }}
@@ -63,7 +63,7 @@ const ClientsLogos = async () => {
         </SliderItem>
         <SliderItem width={150}>
           <Image
-            src={ExtraLogo}
+            src="/logos/extra-company.webp"
             style={{
               objectFit: "contain",
             }}
@@ -72,7 +72,7 @@ const ClientsLogos = async () => {
         </SliderItem>
         <SliderItem width={150}>
           <Image
-            src={LitentryLogo}
+            src="/logos/litentry-company.webp"
             style={{
               objectFit: "contain",
             }}
@@ -81,7 +81,7 @@ const ClientsLogos = async () => {
         </SliderItem>
         <SliderItem width={150}>
           <Image
-            src={PicnicLogo}
+            src="/logos/picnic-company.webp"
             style={{
               objectFit: "contain",
             }}
@@ -90,7 +90,7 @@ const ClientsLogos = async () => {
         </SliderItem>
         <SliderItem width={150}>
           <Image
-            src={PinkPandaLogo}
+            src="/logos/pinkpanda-company.webp"
             style={{
               objectFit: "contain",
             }}
@@ -99,7 +99,7 @@ const ClientsLogos = async () => {
         </SliderItem>
         <SliderItem width={150}>
           <Image
-            src={RainbowLogo}
+            src="/logos/rainbow-company.webp"
             style={{
               objectFit: "contain",
             }}
@@ -108,7 +108,7 @@ const ClientsLogos = async () => {
         </SliderItem>
         <SliderItem width={150}>
           <Image
-            src={ScribewareLogo}
+            src="/logos/scribeware-company.webp"
             style={{
               objectFit: "contain",
             }}
@@ -119,7 +119,7 @@ const ClientsLogos = async () => {
       <SliderContainer initialOffsetX={75} contentWidth={1290}>
         <SliderItem width={150}>
           <Image
-            src={ShopifyLogo}
+            src="/logos/shopify-company.webp"
             style={{
               objectFit: "contain",
             }}
@@ -128,7 +128,7 @@ const ClientsLogos = async () => {
         </SliderItem>
         <SliderItem width={150}>
           <Image
-            src={ShowTimeLogo}
+            src="/logos/showtime-company.webp"
             style={{
               objectFit: "contain",
             }}
@@ -137,7 +137,7 @@ const ClientsLogos = async () => {
         </SliderItem>
         <SliderItem width={150}>
           <Image
-            src={SlingShotLogo}
+            src="/logos/slingshot-company.webp"
             style={{
               objectFit: "contain",
             }}
@@ -146,7 +146,7 @@ const ClientsLogos = async () => {
         </SliderItem>
         <SliderItem width={150}>
           <Image
-            src={SnapCalorieLogo}
+            src="/logos/snapcalorie-company.webp"
             style={{
               objectFit: "contain",
             }}
@@ -155,7 +155,7 @@ const ClientsLogos = async () => {
         </SliderItem>
         <SliderItem width={150}>
           <Image
-            src={StatusLogo}
+            src="/logos/status-company.webp"
             style={{
               objectFit: "contain",
             }}
@@ -164,7 +164,7 @@ const ClientsLogos = async () => {
         </SliderItem>
         <SliderItem width={150}>
           <Image
-            src={SteakWalletLogo}
+            src="/logos/steakwallet-company.webp"
             style={{
               objectFit: "contain",
             }}
@@ -173,7 +173,7 @@ const ClientsLogos = async () => {
         </SliderItem>
         <SliderItem width={150}>
           <Image
-            src={StoriLogo}
+            src="/logos/stori-company.webp"
             style={{
               objectFit: "contain",
             }}
@@ -182,7 +182,7 @@ const ClientsLogos = async () => {
         </SliderItem>
         <SliderItem width={150}>
           <Image
-            src={TocsenLogo}
+            src="/logos/tocsen-company.webp"
             style={{
               objectFit: "contain",
             }}
@@ -191,7 +191,7 @@ const ClientsLogos = async () => {
         </SliderItem>
         <SliderItem width={150}>
           <Image
-            src={WalletConnectLogo}
+            src="/logos/walletconnect-company.webp"
             style={{
               objectFit: "contain",
             }}

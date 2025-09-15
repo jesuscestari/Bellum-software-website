@@ -2,18 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { MdArrowBack } from "react-icons/md";
 
-// Importar imágenes directamente con rutas relativas
-import BodaScreenshot from "../../public/projects/boda-screenshot.webp";
-import SologeneradoresScreenshot from "../../public/projects/sologeneradores-screenshot.webp";
-import PerfumesivilaraScreenshot from "../../public/projects/perfumesivilara-screenshot.webp";
-import ClinicaoeScreenshot from "../../public/projects/clinicaoe-screenshot.webp";
-import ConterraScreenshot from "../../public/projects/conterra-screenshot.webp";
-import EnglishbyclauScreenshot from "../../public/projects/englishbyclau-screenshot.webp";
-import SelectstructuralScreenshot from "../../public/projects/selectstructural-screenshot.webp";
-import EngassistusaScreenshot from "../../public/projects/engassistusa-screenshot.webp";
-import FloraScreenshot from "../../public/projects/flora.png";
-import LenerziScreenshot from "../../public/projects/lenerzi.png";
-import TakesbyusScreenshot from "../../public/projects/takesbyus.webp";
+// Using string paths instead of imports to avoid Sharp optimization issues
+// import BodaScreenshot from "../../public/projects/boda-screenshot.webp";
+// import SologeneradoresScreenshot from "../../public/projects/sologeneradores-screenshot.webp";
+// import PerfumesivilaraScreenshot from "../../public/projects/perfumesivilara-screenshot.webp";
+// import ClinicaoeScreenshot from "../../public/projects/clinicaoe-screenshot.webp";
+// import ConterraScreenshot from "../../public/projects/conterra-screenshot.webp";
+// import EnglishbyclauScreenshot from "../../public/projects/englishbyclau-screenshot.webp";
+// import SelectstructuralScreenshot from "../../public/projects/selectstructural-screenshot.webp";
+// import EngassistusaScreenshot from "../../public/projects/engassistusa-screenshot.webp";
+// import FloraScreenshot from "../../public/projects/flora.png";
+// import LenerziScreenshot from "../../public/projects/lenerzi.png";
+// import TakesbyusScreenshot from "../../public/projects/takesbyus.webp";
 
 const ProyectosPage = async () => {
   return (
@@ -42,12 +42,11 @@ const ProyectosPage = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={TakesbyusScreenshot}
+                src="/projects/takesbyus.webp"
                 alt="Takes by Us"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover"
-                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">
@@ -67,12 +66,11 @@ const ProyectosPage = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={FloraScreenshot}
+                src="/projects/flora.png"
                 alt="Arquitectura emocional"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover"
-                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">
@@ -92,12 +90,11 @@ const ProyectosPage = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={ConterraScreenshot}
+                src="/projects/conterra-screenshot.webp"
                 alt="Conterra Desarrollos"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover"
-                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">Conterra Desarrollos</h3>
@@ -115,12 +112,11 @@ const ProyectosPage = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={EngassistusaScreenshot}
+                src="/projects/engassistusa-screenshot.webp"
                 alt="elmenu.app"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover pointer-events-none"
-                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">elmenu.app</h3>
@@ -138,12 +134,11 @@ const ProyectosPage = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={BodaScreenshot}
+                src="/projects/boda-screenshot.webp"
                 alt="Sitio de Bodas"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover pointer-events-none"
-                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">Sitio de Bodas</h3>
@@ -161,12 +156,11 @@ const ProyectosPage = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={SologeneradoresScreenshot}
+                src="/projects/sologeneradores-screenshot.webp"
                 alt="Solo Generadores"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover pointer-events-none"
-                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">Solo Generadores</h3>
@@ -184,12 +178,11 @@ const ProyectosPage = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={PerfumesivilaraScreenshot}
+                src="/projects/perfumesivilara-screenshot.webp"
                 alt="Perfumes Ivilara"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover pointer-events-none"
-                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">Perfumes Ivilara</h3>
@@ -207,12 +200,11 @@ const ProyectosPage = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={ClinicaoeScreenshot}
+                src="/projects/clinicaoe-screenshot.webp"
                 alt="Clínica OE"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover pointer-events-none"
-                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">Clínica OE</h3>
@@ -230,12 +222,11 @@ const ProyectosPage = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={EnglishbyclauScreenshot}
+                src="/projects/englishbyclau-screenshot.webp"
                 alt="English by Clau Academy"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover pointer-events-none"
-                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">
@@ -255,12 +246,11 @@ const ProyectosPage = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={SelectstructuralScreenshot}
+                src="/projects/selectstructural-screenshot.webp"
                 alt="Select Structural"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover pointer-events-none"
-                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">Select Structural</h3>
@@ -278,12 +268,11 @@ const ProyectosPage = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={LenerziScreenshot}
+                src="/projects/lenerzi.png"
                 alt="Lenerzi"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover"
-                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">Lenerzi</h3>

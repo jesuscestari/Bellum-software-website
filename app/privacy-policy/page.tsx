@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import MargeloLogo from "public/logo.png";
+// import MargeloLogo from "public/logo.png";
 import { MdOutlineHome } from "react-icons/md";
 
 export default function PrivacyPolicy() {
@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
     <main className="min-h-screen bg-black text-white flex flex-col justify-center items-center gap-8 text-center">
       <header className="absolute top-0 pt-10">
         <Image
-          src={MargeloLogo}
+          src="/logo.png"
           width={128 / 3}
           height={114 / 3}
           alt="margelo logo"

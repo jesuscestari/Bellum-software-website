@@ -3,8 +3,8 @@
 import { useState, useRef, useCallback } from "react";
 import Image from "next/image";
 import { useScrollContext } from "providers/scroll/scroll-context";
-import MargeloImage from "public/logo.png";
-import ArrowDown from "public/arrow-down.webp";
+// import MargeloImage from "public/logo.png";
+// import ArrowDown from "public/arrow-down.webp";
 import styles from "styles/modules/landing.module.css";
 
 const Landing = () => {
@@ -36,7 +36,7 @@ const Landing = () => {
         }`}
       >
         <Image
-          src={MargeloImage}
+          src="/logo.png"
           width={128 / 3}
           height={114 / 3}
           alt="margelo logo"
@@ -58,8 +58,10 @@ const Landing = () => {
         }`}
       >
         <Image
-          src={ArrowDown}
+          src="/arrow-down.webp"
           alt="arrow down icon"
+          width={50}
+          height={50}
           onLoad={handleImageLoaded}
           style={{
             width: "50%",

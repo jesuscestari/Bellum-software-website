@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import MargeloImage from "public/logo.png";
+// import MargeloImage from "public/logo.png";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -57,7 +57,7 @@ const ContactUs = () => {
     <div className="min-h-screen bg-black text-white flex flex-col justify-content items-center py-6 lg:py-6">
       <div className="flex flex-1 flex-col justify-center items-center">
         <div className="pb-10">
-          <Image src={MargeloImage} width={30} height={30} alt="margelo logo" />
+          <Image src="/logo.png" width={30} height={30} alt="margelo logo" />
         </div>
         <h2 className="text-4xl font-bold">Contactanos</h2>
         <form

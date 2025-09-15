@@ -1,8 +1,8 @@
 import Member from "components/app/about-team/member/member";
-import ChristophFace from "public/team/christoph-face.svg";
-import JanicFace from "public/team/janic-face.svg";
-import MateiFace from "public/team/matei-face.svg";
-import ViktoriaFace from "public/team/viktoria-face.svg";
+// import ChristophFace from "public/team/christoph-face.svg";
+// import JanicFace from "public/team/janic-face.svg";
+// import MateiFace from "public/team/matei-face.svg";
+// import ViktoriaFace from "public/team/viktoria-face.svg";
 
 const AboutTeam = async () => {
   return (
@@ -22,10 +22,10 @@ const AboutTeam = async () => {
           <p className="text-xl">the &ldquo;spec-ops&rdquo;</p>
         </div>
         <section className="grid grid-cols-2 gap-8 sm:grid-cols-12 md:grid-cols-4 lg:grid-cols-4 lg:gap-20 pointer-events-none">
-          <Member name="Jesus" image={ChristophFace} socialId="Full Stack" />
-          <Member name="Alejandro" image={JanicFace} socialId="Full Stack" />
-          <Member name="Daniela" image={ViktoriaFace} socialId="Marketing" />
-          <Member name="Francisco" image={MateiFace} socialId="Frontend" />
+          <Member name="Jesus" image="/team/christoph-face.svg" socialId="Full Stack" />
+          <Member name="Alejandro" image="/team/janic-face.svg" socialId="Full Stack" />
+          <Member name="Daniela" image="/team/viktoria-face.svg" socialId="Marketing" />
+          <Member name="Francisco" image="/team/matei-face.svg" socialId="Frontend" />
         </section>
       </div>
     </section>

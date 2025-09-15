@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// Importar imágenes directamente con rutas relativas
-import BodaScreenshot from "../../../public/projects/boda-screenshot.webp";
-import ConterraScreenshot from "../../../public/projects/conterra-screenshot.webp";
-import EngassistusaScreenshot from "../../../public/projects/engassistusa-screenshot.webp";
-import FloraScreenshot from "../../../public/projects/flora.png";
-import TakesbyusScreenshot from "../../../public/projects/takesbyus.webp";
+// Using string paths instead of imports to avoid Sharp optimization issues
+// import BodaScreenshot from "../../../public/projects/boda-screenshot.webp";
+// import ConterraScreenshot from "../../../public/projects/conterra-screenshot.webp";
+// import EngassistusaScreenshot from "../../../public/projects/engassistusa-screenshot.webp";
+// import FloraScreenshot from "../../../public/projects/flora.png";
+// import TakesbyusScreenshot from "../../../public/projects/takesbyus.webp";
 
 const Clients = async () => {
   return (
@@ -26,12 +26,11 @@ const Clients = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={TakesbyusScreenshot}
+                src="/projects/takesbyus.webp"
                 alt="Takes by Us"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover"
-                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">
@@ -51,12 +50,11 @@ const Clients = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={FloraScreenshot}
+                src="/projects/flora.png"
                 alt="Arquitectura emocional"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover"
-                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">
@@ -76,12 +74,11 @@ const Clients = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={ConterraScreenshot}
+                src="/projects/conterra-screenshot.webp"
                 alt="Conterra Desarrollos"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover"
-                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">Conterra Desarrollos</h3>
@@ -99,12 +96,11 @@ const Clients = async () => {
           >
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
-                src={EngassistusaScreenshot}
+                src="/projects/engassistusa-screenshot.webp"
                 alt="elmenu.app"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover pointer-events-none"
-                placeholder="blur"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">elmenu.app</h3>
