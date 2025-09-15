@@ -13,6 +13,7 @@ import SelectstructuralScreenshot from "../../public/projects/selectstructural-s
 import EngassistusaScreenshot from "../../public/projects/engassistusa-screenshot.webp";
 import FloraScreenshot from "../../public/projects/flora.png";
 import LenerziScreenshot from "../../public/projects/lenerzi.png";
+import TakesbyusScreenshot from "../../public/projects/takesbyus.webp";
 
 const ProyectosPage = async () => {
   return (
@@ -32,7 +33,32 @@ const ProyectosPage = async () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          {/* Proyecto 1 - Arquitectura emocional */}
+          {/* Proyecto 1 - Takes by Us */}
+          <a
+            href="https://www.takesbyus.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
+          >
+            <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+              <Image
+                src={TakesbyusScreenshot}
+                alt="Takes by Us"
+                width={400}
+                height={300}
+                className="w-full h-full object-cover"
+                placeholder="blur"
+              />
+            </div>
+            <h3 className="text-lg font-semibold mb-2">
+              Takes by Us
+            </h3>
+            <p className="text-gray-600 text-sm">
+              Sitio web moderno y elegante hecho a medida para Takes by Us.
+            </p>
+          </a>
+
+          {/* Proyecto 2 - Arquitectura emocional */}
           <a
             href="https://floraguerra.vercel.app/"
             target="_blank"
@@ -57,7 +83,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 2 - Conterra Desarrollos */}
+          {/* Proyecto 3 - Conterra Desarrollos */}
           <a
             href="https://conterradesarrollos.com/"
             target="_blank"
@@ -80,7 +106,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 3 - elmenu.app */}
+          {/* Proyecto 4 - elmenu.app */}
           <a
             href="https://elmenu.app/"
             target="_blank"
@@ -103,7 +129,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 4 - Sitio de Bodas */}
+          {/* Proyecto 5 - Sitio de Bodas */}
           <a
             href="https://boda-khaki.vercel.app/"
             target="_blank"
@@ -126,7 +152,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 5 - Solo Generadores */}
+          {/* Proyecto 6 - Solo Generadores */}
           <a
             href="https://www.sologeneradores.com/"
             target="_blank"
@@ -149,7 +175,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 6 - Perfumes Ivilara */}
+          {/* Proyecto 7 - Perfumes Ivilara */}
           <a
             href="https://www.perfumesivilara.com/"
             target="_blank"
@@ -172,7 +198,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 7 - Clínica OE */}
+          {/* Proyecto 8 - Clínica OE */}
           <a
             href="https://clinicaoe.com.ar/"
             target="_blank"
@@ -195,7 +221,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 8 - English by Clau Academy */}
+          {/* Proyecto 9 - English by Clau Academy */}
           <a
             href="https://www.englishbyclauacademy.com/"
             target="_blank"
@@ -220,7 +246,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 9 - Select Structural */}
+          {/* Proyecto 10 - Select Structural */}
           <a
             href="https://www.selectstructural.com/"
             target="_blank"
@@ -243,7 +269,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
           
-          {/* Proyecto 10 - Lenerzi */}
+          {/* Proyecto 11 - Lenerzi */}
           <a
             href="https://www.lenerzi.com/"
             target="_blank"

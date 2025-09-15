@@ -6,6 +6,7 @@ import BodaScreenshot from "../../../public/projects/boda-screenshot.webp";
 import ConterraScreenshot from "../../../public/projects/conterra-screenshot.webp";
 import EngassistusaScreenshot from "../../../public/projects/engassistusa-screenshot.webp";
 import FloraScreenshot from "../../../public/projects/flora.png";
+import TakesbyusScreenshot from "../../../public/projects/takesbyus.webp";
 
 const Clients = async () => {
   return (
@@ -16,7 +17,32 @@ const Clients = async () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          {/* Proyecto 1 - Arquitectura emocional */}
+          {/* Proyecto 1 - Takes by Us */}
+          <a
+            href="https://www.takesbyus.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
+          >
+            <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+              <Image
+                src={TakesbyusScreenshot}
+                alt="Takes by Us"
+                width={400}
+                height={300}
+                className="w-full h-full object-cover"
+                placeholder="blur"
+              />
+            </div>
+            <h3 className="text-lg font-semibold mb-2">
+              Takes by Us
+            </h3>
+            <p className="text-gray-600 text-sm">
+              Sitio web moderno y elegante hecho a medida para Takes by Us.
+            </p>
+          </a>
+
+          {/* Proyecto 2 - Arquitectura emocional */}
           <a
             href="https://floraguerra.vercel.app/"
             target="_blank"
@@ -41,7 +67,7 @@ const Clients = async () => {
             </p>
           </a>
 
-          {/* Proyecto 2 - Conterra Desarrollos */}
+          {/* Proyecto 3 - Conterra Desarrollos */}
           <a
             href="https://conterradesarrollos.com/"
             target="_blank"
@@ -64,7 +90,7 @@ const Clients = async () => {
             </p>
           </a>
 
-          {/* Proyecto 3 - elmenu.app */}
+          {/* Proyecto 4 - elmenu.app */}
           <a
             href="https://elmenu.app/"
             target="_blank"
@@ -87,28 +113,6 @@ const Clients = async () => {
             </p>
           </a>
 
-          {/* Proyecto 4 - Sitio de Bodas */}
-          <a
-            href="https://boda-khaki.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
-          >
-            <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-              <Image
-                src={BodaScreenshot}
-                alt="Sitio de Bodas"
-                width={400}
-                height={300}
-                className="w-full h-full object-cover pointer-events-none"
-                placeholder="blur"
-              />
-            </div>
-            <h3 className="text-lg font-semibold mb-2">Sitio de Bodas</h3>
-            <p className="text-gray-600 text-sm">
-              Sitio web elegante para organización de bodas
-            </p>
-          </a>
         </div>
 
         {/* Botón "Ver todos los proyectos" */}
