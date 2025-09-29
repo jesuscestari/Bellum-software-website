@@ -19,7 +19,7 @@ const Clients = async () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {/* Proyecto 1 - Gaetano Seguros */}
           <a
-            href="https://gaetanoseguros.netlify.app/"
+            href="https://gaetanoseguros.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
@@ -33,9 +33,7 @@ const Clients = async () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-lg font-semibold mb-2">
-              Gaetano Seguros
-            </h3>
+            <h3 className="text-lg font-semibold mb-2">Gaetano Seguros</h3>
             <p className="text-gray-600 text-sm">
               Sitio web profesional para empresa de seguros.
             </p>
@@ -57,9 +55,7 @@ const Clients = async () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-lg font-semibold mb-2">
-              Takes by Us
-            </h3>
+            <h3 className="text-lg font-semibold mb-2">Takes by Us</h3>
             <p className="text-gray-600 text-sm">
               Sitio web moderno y elegante hecho a medida para Takes by Us.
             </p>
@@ -198,7 +194,6 @@ const Clients = async () => {
               Tienda online de perfumes y fragancias premium
             </p>
           </a>
-
         </div>
 
         {/* Botón "Ver todos los proyectos" */}

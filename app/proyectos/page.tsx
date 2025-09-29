@@ -35,7 +35,7 @@ const ProyectosPage = async () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {/* Proyecto 1 - Gaetano Seguros */}
           <a
-            href="https://gaetanoseguros.netlify.app/"
+            href="https://gaetanoseguros.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
@@ -49,9 +49,7 @@ const ProyectosPage = async () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-lg font-semibold mb-2">
-              Gaetano Seguros
-            </h3>
+            <h3 className="text-lg font-semibold mb-2">Gaetano Seguros</h3>
             <p className="text-gray-600 text-sm">
               Sitio web profesional para empresa de seguros.
             </p>
@@ -73,9 +71,7 @@ const ProyectosPage = async () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-lg font-semibold mb-2">
-              Takes by Us
-            </h3>
+            <h3 className="text-lg font-semibold mb-2">Takes by Us</h3>
             <p className="text-gray-600 text-sm">
               Sitio web moderno y elegante hecho a medida para Takes by Us.
             </p>
@@ -282,7 +278,7 @@ const ProyectosPage = async () => {
               Empresa de ingeniería estructural y construcción
             </p>
           </a>
-          
+
           {/* Proyecto 12 - Lenerzi */}
           <a
             href="https://www.lenerzi.com/"
@@ -300,9 +296,7 @@ const ProyectosPage = async () => {
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">Lenerzi</h3>
-            <p className="text-gray-600 text-sm">
-              Sitio web para Lenerzi.
-            </p>
+            <p className="text-gray-600 text-sm">Sitio web para Lenerzi.</p>
           </a>
         </div>
       </div>
