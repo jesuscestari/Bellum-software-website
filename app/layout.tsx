@@ -14,6 +14,7 @@ type RootLayoutProps = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bellumsoftware.com"),
   title:
     "Bellum - Agencia de Software en Argentina | Desarrollo Web, Tiendas Online y Consultoría",
   description:
@@ -21,18 +22,54 @@ export const metadata: Metadata = {
   keywords:
     "agencia de software argentina, consultora de software, desarrollo web argentina, creación de páginas web, tiendas online argentina, página para negocios, ecommerce argentina, soluciones digitales, desarrollo de apps, diseño web profesional",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      {
+        rel: "android-chrome-192x192",
+        url: "/web-app-manifest-192x192.png",
+      },
+      {
+        rel: "android-chrome-512x512",
+        url: "/web-app-manifest-512x512.png",
+      },
+    ],
+  },
+  manifest: "/manifest.json",
+  openGraph: {
+    type: "website",
+    locale: "es_AR",
+    url: "https://bellumsoftware.com/",
+    title:
+      "Bellum - Agencia de Software en Argentina | Desarrollo Web, Tiendas Online y Consultoría",
+    description:
+      "Agencia de software en Argentina especializada en desarrollo de páginas web, tiendas online, consultoría tecnológica y soluciones digitales para negocios.",
+    siteName: "Bellum Software",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Bellum - Agencia de Software en Argentina",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Bellum - Agencia de Software en Argentina | Desarrollo Web, Tiendas Online y Consultoría",
+    description:
+      "Agencia de software en Argentina especializada en desarrollo de páginas web, tiendas online, consultoría tecnológica y soluciones digitales para negocios.",
+    images: ["/og-image.png"],
   },
   other: {
     "theme-color": "#000000",
     "color-scheme": "dark",
-    "og:title":
-      "Bellum - Agencia de Software en Argentina | Desarrollo Web, Tiendas Online y Consultoría",
-    "og:description":
-      "Agencia de software en Argentina especializada en desarrollo de páginas web, tiendas online, consultoría tecnológica y soluciones digitales para negocios.",
-    "og:url": "https://bellumsoftware.com/",
-
-    "og:type": "website",
   },
 };
 
