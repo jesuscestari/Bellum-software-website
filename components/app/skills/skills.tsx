@@ -45,19 +45,20 @@ const Skills = () => {
             className={styles.skills__text}
             style={{ opacity: opacityForBlock(progress, 0) }}
           >
-            Somos BELLUM.
+            Somos BELLUM. Tu estrategia de desarrollo web definitiva.
           </div>
           <span
             className={`${styles.skills__text} inline-block my-5 after:content-['_']`}
             style={{ opacity: opacityForBlock(progress, 1) }}
           >
-            Convertimos tus ideas en realidad.
+            Diseñamos y desarrollamos el ecosistema digital que tu marca
+            necesita para crecer.
           </span>
           <span
             className={`${styles.skills__text} inline-block`}
             style={{ opacity: opacityForBlock(progress, 2) }}
           >
-            y las mejores ideas comienzan en <strong>Bellum</strong>.
+            De la idea al deploy exitoso.
           </span>
         </div>
       </div>

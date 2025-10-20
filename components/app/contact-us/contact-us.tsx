@@ -59,7 +59,7 @@ const ContactUs = () => {
         <div className="pb-10">
           <Image src="/logo.png" width={30} height={30} alt="margelo logo" />
         </div>
-        <h2 className="text-4xl font-bold">Contactanos</h2>
+        <h2 className="text-4xl font-bold">Contacta con nosotros</h2>
         <form
           onSubmit={handleSubmit}
           className="min-w-full flex flex-col gap-4 px-10 mt-16 sm:min-w-[500px] md:min-w-[600px] lg:mt-20"
