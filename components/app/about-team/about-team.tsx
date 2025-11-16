@@ -21,11 +21,22 @@ const AboutTeam = async () => {
           </h2>
           <p className="text-xl">the &ldquo;spec-ops&rdquo;</p>
         </div>
-        <section className="grid grid-cols-2 gap-8 sm:grid-cols-12 md:grid-cols-4 lg:grid-cols-4 lg:gap-20 pointer-events-none">
-          <Member name="Jesus" image="/team/christoph-face.svg" socialId="Full Stack" />
-          <Member name="Alejandro" image="/team/janic-face.svg" socialId="Full Stack" />
-          <Member name="Daniela" image="/team/viktoria-face.svg" socialId="Marketing" />
-          <Member name="Francisco" image="/team/matei-face.svg" socialId="Frontend" />
+        <section className="grid grid-cols-2 gap-8 sm:grid-cols-12 md:grid-cols-3 lg:grid-cols-3 lg:gap-20 pointer-events-none justify-items-center justify-center">
+          <Member
+            name="Jesus"
+            image="/team/christoph-face.svg"
+            socialId="Product Developer / Full Stack"
+          />
+          <Member
+            name="Alejandro"
+            image="/team/szymon-face.svg"
+            socialId="Full Stack"
+          />
+          <Member
+            name="Daniela"
+            image="/team/viktoria-face.svg"
+            socialId="Marketing"
+          />
         </section>
       </div>
     </section>

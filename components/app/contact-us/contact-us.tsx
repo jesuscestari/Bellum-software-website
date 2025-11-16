@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { FaUser, FaEnvelope, FaComment, FaPaperPlane } from "react-icons/fa";
 // import MargeloImage from "public/logo.png";
 
 const ContactUs = () => {
@@ -59,46 +60,55 @@ const ContactUs = () => {
         <div className="pb-10">
           <Image src="/logo.png" width={30} height={30} alt="margelo logo" />
         </div>
-        <h2 className="text-4xl font-bold">Contacta con nosotros</h2>
+        <h2 className="text-4xl font-bold text-center">Contacta con nosotros</h2>
         <form
           onSubmit={handleSubmit}
           className="min-w-full flex flex-col gap-4 px-10 mt-16 sm:min-w-[500px] md:min-w-[600px] lg:mt-20"
         >
-          <input
-            id="companyName"
-            name="companyName"
-            value={formData.companyName}
-            onChange={handleInputChange}
-            className="bg-black text-white outline-none border-2 border-white rounded-3xl px-8 py-2"
-            required
-            maxLength={128}
-            type="text"
-            placeholder="Nombre"
-            disabled={isSubmitting}
-          />
-          <input
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleInputChange}
-            className="bg-black text-white outline-none border-2 border-white rounded-3xl px-8 py-2"
-            required
-            maxLength={128}
-            type="email"
-            placeholder="Correo electrónico"
-            disabled={isSubmitting}
-          />
-          <textarea
-            name="message"
-            id="message"
-            value={formData.message}
-            onChange={handleInputChange}
-            required
-            maxLength={1048576}
-            placeholder="Información adicional"
-            className="min-h-[16em] bg-black text-white outline-none border-2 border-white rounded-3xl px-8 py-6"
-            disabled={isSubmitting}
-          />
+          <div className="relative">
+            <FaUser className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white" />
+            <input
+              id="companyName"
+              name="companyName"
+              value={formData.companyName}
+              onChange={handleInputChange}
+              className="bg-black text-white outline-none border-2 border-white rounded-3xl pl-12 pr-8 py-2 w-full"
+              required
+              maxLength={128}
+              type="text"
+              placeholder="Nombre"
+              disabled={isSubmitting}
+            />
+          </div>
+          <div className="relative">
+            <FaEnvelope className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white" />
+            <input
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
+              className="bg-black text-white outline-none border-2 border-white rounded-3xl pl-12 pr-8 py-2 w-full"
+              required
+              maxLength={128}
+              type="email"
+              placeholder="Correo electrónico"
+              disabled={isSubmitting}
+            />
+          </div>
+          <div className="relative">
+            <FaComment className="absolute left-4 top-4 text-white" />
+            <textarea
+              name="message"
+              id="message"
+              value={formData.message}
+              onChange={handleInputChange}
+              required
+              maxLength={1048576}
+              placeholder="Información adicional"
+              className="min-h-[16em] bg-black text-white outline-none border-2 border-white rounded-3xl pl-12 pr-8 py-6 w-full"
+              disabled={isSubmitting}
+            />
+          </div>
 
           {submitStatus === "success" && (
             <div className="text-center text-green-400">
@@ -114,11 +124,20 @@ const ContactUs = () => {
 
           <div className="text-center">
             <button
-              className="bg-white text-black rounded-3xl px-8 py-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="bg-white text-black rounded-3xl px-8 py-2 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 mx-auto"
               type="submit"
               disabled={isSubmitting}
             >
-              {isSubmitting ? "Enviando..." : "Enviar"}
+              {isSubmitting ? (
+                <>
+                  <span>Enviando...</span>
+                </>
+              ) : (
+                <>
+                  <FaPaperPlane />
+                  <span>Enviar</span>
+                </>
+              )}
             </button>
           </div>
         </form>
