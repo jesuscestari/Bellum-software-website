@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import Footer from "layout/footer/footer";
+import WhatsAppButton from "components/app/whatsapp-button/whatsapp-button";
 import WidthSizeProvider from "providers/width-size/width-size-provider";
 import ScrollProvider from "providers/scroll/scroll-provider";
 import Compose from "utils/compose/compose";
@@ -16,11 +17,11 @@ type RootLayoutProps = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://bellumsoftware.com"),
   title:
-    "Bellum - Agencia de Software en Argentina | Desarrollo Web, Tiendas Online y Consultoría",
+    "Bellum - Agencia de Software en Argentina | Desarrollo Web, Mobile Apps, SaaS y Tiendas Online",
   description:
-    "Agencia de software en Argentina especializada en desarrollo de páginas web, tiendas online, consultoría tecnológica y soluciones digitales para negocios. Creamos sitios web profesionales y tiendas ecommerce a medida.",
+    "Agencia de software en Argentina especializada en desarrollo de páginas web, aplicaciones móviles (mobile apps), SaaS, tiendas online, consultoría tecnológica y soluciones digitales para negocios. Creamos sitios web profesionales, apps móviles y tiendas ecommerce a medida.",
   keywords:
-    "agencia de software argentina, consultora de software, desarrollo web argentina, creación de páginas web, tiendas online argentina, página para negocios, ecommerce argentina, soluciones digitales, desarrollo de apps, diseño web profesional",
+    "agencia de software argentina, consultora de software, desarrollo web argentina, creación de páginas web, tiendas online argentina, página para negocios, ecommerce argentina, soluciones digitales, desarrollo de apps, diseño web profesional, saas, software as a service, mobile, mobile app, aplicaciones móviles, desarrollo mobile, desarrollo de aplicaciones móviles, app móvil, desarrollo iOS, desarrollo Android, aplicaciones nativas, desarrollo multiplataforma, react native, flutter, desarrollo de software, agencia de desarrollo, desarrollo web y mobile, soluciones SaaS, plataformas SaaS, software empresarial, desarrollo de software a medida, consultoría tecnológica argentina",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -46,9 +47,9 @@ export const metadata: Metadata = {
     locale: "es_AR",
     url: "https://bellumsoftware.com/",
     title:
-      "Bellum - Agencia de Software en Argentina | Desarrollo Web, Tiendas Online y Consultoría",
+      "Bellum - Agencia de Software en Argentina | Desarrollo Web, Mobile Apps, SaaS y Tiendas Online",
     description:
-      "Agencia de software en Argentina especializada en desarrollo de páginas web, tiendas online, consultoría tecnológica y soluciones digitales para negocios.",
+      "Agencia de software en Argentina especializada en desarrollo de páginas web, aplicaciones móviles (mobile apps), SaaS, tiendas online, consultoría tecnológica y soluciones digitales para negocios.",
     siteName: "Bellum Software",
     images: [
       {
@@ -62,9 +63,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Bellum - Agencia de Software en Argentina | Desarrollo Web, Tiendas Online y Consultoría",
+      "Bellum - Agencia de Software en Argentina | Desarrollo Web, Mobile Apps, SaaS y Tiendas Online",
     description:
-      "Agencia de software en Argentina especializada en desarrollo de páginas web, tiendas online, consultoría tecnológica y soluciones digitales para negocios.",
+      "Agencia de software en Argentina especializada en desarrollo de páginas web, aplicaciones móviles (mobile apps), SaaS, tiendas online, consultoría tecnológica y soluciones digitales para negocios.",
     images: ["/og-image.png"],
   },
   other: {
@@ -77,11 +78,12 @@ const RootLayout = async ({ children }: RootLayoutProps) => {
   const Providers = [WidthSizeProvider, ScrollProvider];
 
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={InterFont.className}>
         <Compose providers={Providers as never}>
           {children}
           <Footer />
+          <WhatsAppButton />
           <Analytics />
         </Compose>
       </body>

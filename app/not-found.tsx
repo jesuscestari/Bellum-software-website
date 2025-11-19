@@ -27,3 +27,4 @@ const NotFound = async () => {
 };
 
 export default NotFound;
+

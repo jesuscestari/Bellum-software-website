@@ -6,12 +6,11 @@ import Member from "components/app/about-team/member/member";
 
 const AboutTeam = async () => {
   return (
-    <section className="bg-white text-black text-3xl flex flex-col py-10 md:py-20">
+    <section id="about-team" className="bg-white text-black text-3xl flex flex-col py-10 md:py-20">
       <div className="container mx-auto px-11">
-        <p className="text-3xl leading-tight tracking-tight mx-auto lg:text-4xl">
-          <strong>Nos dedicamos a crear aplicaciones web.</strong>
-          Somos un equipo apasionado por el desarrollo y el aprendizaje
-          constante.
+        <p className="text-xl leading-tight tracking-tight mx-auto lg:text-4xl">
+          <strong>Nos dedicamos a crear aplicaciones web.</strong> Somos un
+          equipo apasionado por el desarrollo y el aprendizaje constante.
         </p>
       </div>
       <div className="container text-center mx-auto">
@@ -21,16 +20,11 @@ const AboutTeam = async () => {
           </h2>
           <p className="text-xl">the &ldquo;spec-ops&rdquo;</p>
         </div>
-        <section className="grid grid-cols-2 gap-8 sm:grid-cols-12 md:grid-cols-3 lg:grid-cols-3 lg:gap-20 pointer-events-none justify-items-center justify-center">
+        <section className="grid grid-cols-2 gap-8 sm:grid-cols-12 md:grid-cols-2 lg:grid-cols-2 lg:gap-20 pointer-events-none justify-items-center justify-center">
           <Member
             name="Jesus"
             image="/team/christoph-face.svg"
             socialId="Product Developer / Full Stack"
-          />
-          <Member
-            name="Alejandro"
-            image="/team/szymon-face.svg"
-            socialId="Full Stack"
           />
           <Member
             name="Daniela"

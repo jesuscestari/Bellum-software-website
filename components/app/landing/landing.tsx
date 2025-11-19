@@ -33,7 +33,7 @@ const Landing = () => {
       <div className="text-white font-bold flex flex-1 flex-col justify-center items-center text-center transition-all duration-1000 drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] opacity-100">
         <h1 className="text-4xl mb-6 lg:text-5xl">Bellum.</h1>
         <h2 className="text-2xl tracking-tight mb-2 lg:text-3xl">
-          Agencia de Software.
+          Desarrollo web definitivo.
         </h2>
       </div>
       <div className="flex-grow-0 transition-all duration-1000 pb-10 opacity-100 relative z-10">
