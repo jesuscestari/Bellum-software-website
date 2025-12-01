@@ -33,7 +33,29 @@ const ProyectosPage = async () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          {/* Proyecto 1 - Gaetano Seguros */}
+          {/* Proyecto 1 - Tiendea.app */}
+          <a
+            href="https://tiendea.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
+          >
+            <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+              <Image
+                src="/projects/tiendea.webp"
+                alt="Tiendea.app"
+                width={400}
+                height={300}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-lg font-semibold mb-2">Tiendea.app</h3>
+            <p className="text-gray-600 text-sm">
+              Sitio web y aplicación hecha a medida para Tiendea.app
+            </p>
+          </a>
+
+          {/* Proyecto 2 - Gaetano Seguros */}
           <a
             href="https://gaetanoseguros.com/"
             target="_blank"
@@ -55,7 +77,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 2 - Takes by Us */}
+          {/* Proyecto 3 - Takes by Us */}
           <a
             href="https://www.takesbyus.com/"
             target="_blank"
@@ -77,7 +99,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 3 - Arquitectura emocional */}
+          {/* Proyecto 4 - Arquitectura emocional */}
           <a
             href="https://floraguerra.vercel.app/"
             target="_blank"
@@ -101,7 +123,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 4 - Conterra Desarrollos */}
+          {/* Proyecto 5 - Conterra Desarrollos */}
           <a
             href="https://conterradesarrollos.com/"
             target="_blank"
@@ -123,7 +145,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 5 - elmenu.app */}
+          {/* Proyecto 6 - elmenu.app */}
           <a
             href="https://elmenu.app/"
             target="_blank"
@@ -145,7 +167,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 6 - Sitio de Bodas */}
+          {/* Proyecto 7 - Sitio de Bodas */}
           <a
             href="https://boda-khaki.vercel.app/"
             target="_blank"
@@ -167,7 +189,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 7 - Solo Generadores */}
+          {/* Proyecto 8 - Solo Generadores */}
           <a
             href="https://www.sologeneradores.com/"
             target="_blank"
@@ -189,7 +211,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 8 - Perfumes Ivilara */}
+          {/* Proyecto 9 - Perfumes Ivilara */}
           <a
             href="https://www.perfumesivilara.com/"
             target="_blank"
@@ -211,7 +233,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 9 - Clínica OE */}
+          {/* Proyecto 10 - Clínica OE */}
           <a
             href="https://clinicaoe.com.ar/"
             target="_blank"
@@ -233,7 +255,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 10 - English by Clau Academy */}
+          {/* Proyecto 11 - English by Clau Academy */}
           <a
             href="https://www.englishbyclauacademy.com/"
             target="_blank"
@@ -257,7 +279,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 11 - Select Structural */}
+          {/* Proyecto 12 - Select Structural */}
           <a
             href="https://www.selectstructural.com/"
             target="_blank"
@@ -279,7 +301,7 @@ const ProyectosPage = async () => {
             </p>
           </a>
 
-          {/* Proyecto 12 - Lenerzi */}
+          {/* Proyecto 13 - Lenerzi */}
           <a
             href="https://www.lenerzi.com/"
             target="_blank"

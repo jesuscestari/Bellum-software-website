@@ -146,7 +146,7 @@ type LedHandProps = {
  */
 const LedHand = ({ side }: LedHandProps) => {
   const isLeft = side === "left";
-  const imageSrc = isLeft ? "/izquierda.webp" : "/derecha.webp";
+  const imageSrc = isLeft ? "/izquierda2.webp" : "/derecha.webp";
 
   return (
     <div
@@ -219,7 +219,7 @@ const Landing = () => {
       `}</style>
 
       {/* --- Navigation --- */}
-      <nav className="absolute top-0 left-0 w-full p-6 md:p-8 flex justify-between items-center z-20">
+      <nav className="absolute top-0 left-0 w-full p-6 md:p-8 flex justify-center md:justify-between items-center z-20">
         <div className="text-2xl font-bold tracking-tight text-white flex items-center gap-2">
           <Image
             src="/logo.png"
@@ -231,7 +231,7 @@ const Landing = () => {
         </div>
         <button
           onClick={handleGetStarted}
-          className="bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-gray-200 transition-colors text-sm md:text-base"
+          className="hidden md:block bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-gray-200 transition-colors text-sm md:text-base"
         >
           Contactar
         </button>
