@@ -6,13 +6,14 @@ import { FaWhatsapp } from "react-icons/fa";
 const WhatsAppButton = () => {
   const [isVisible, setIsVisible] = useState(false);
   const phoneNumber = "5491173672568"; // Número de WhatsApp (formato: código de país + número sin + ni espacios)
-  const message = "Hola, me gustaría obtener más información sobre sus servicios.";
+  const message =
+    "Hola, me gustaría obtener más información sobre sus servicios.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   useEffect(() => {
     // Buscar la primera sección después del hero (AboutTeam)
     const firstSection = document.getElementById("about-team");
-    
+
     if (!firstSection) return;
 
     // Usar IntersectionObserver para detectar cuando la sección entra en el viewport
@@ -58,4 +59,3 @@ const WhatsAppButton = () => {
 };
 
 export default WhatsAppButton;
-

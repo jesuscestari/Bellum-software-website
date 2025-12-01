@@ -55,12 +55,17 @@ const ContactUs = () => {
   };
 
   return (
-    <div id="contact-us" className="min-h-screen bg-black text-white flex flex-col justify-content items-center py-6 lg:py-6">
+    <div
+      id="contact-us"
+      className="min-h-screen bg-black text-white flex flex-col justify-content items-center py-6 lg:py-6"
+    >
       <div className="flex flex-1 flex-col justify-center items-center">
         <div className="pb-10">
           <Image src="/logo.png" width={30} height={30} alt="margelo logo" />
         </div>
-        <h2 className="text-4xl font-bold text-center">Contacta con nosotros</h2>
+        <h2 className="text-4xl font-bold text-center">
+          Contacta con nosotros
+        </h2>
         <form
           onSubmit={handleSubmit}
           className="min-w-full flex flex-col gap-4 px-10 mt-16 sm:min-w-[500px] md:min-w-[600px] lg:mt-20"

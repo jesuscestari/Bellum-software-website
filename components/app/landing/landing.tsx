@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import * as THREE from "three";
+import Typewriter from "../typewriter/typewriter";
 
 // --- Assets & Icons ---
 
@@ -252,7 +253,11 @@ const Landing = () => {
         {/* Texto posicionado arriba de la estrella */}
         <div className="relative z-20 text-center max-w-4xl mx-auto mt-[-380px] md:mt-[-430px]">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-light leading-tight tracking-tight mb-4 text-white text-glow">
-            Desarrollo web definitivo
+            <Typewriter
+              text="Desarrollo web definitivo"
+              speed={40}
+              className="inline-block"
+            />
           </h1>
 
           <p className="text-gray-400 text-sm md:text-base max-w-xl mx-auto mb-8 tracking-widest uppercase font-mono">

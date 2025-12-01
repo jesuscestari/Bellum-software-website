@@ -9,10 +9,10 @@ type MemberProps = {
 const Member = async ({ name, image, socialId }: MemberProps) => {
   return (
     <div>
-      <Image 
-        src={image} 
-        width={350} 
-        height={420} 
+      <Image
+        src={image}
+        width={350}
+        height={420}
         alt={name}
         className="w-48 h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 object-contain"
       />

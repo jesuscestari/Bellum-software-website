@@ -6,7 +6,10 @@ import Member from "components/app/about-team/member/member";
 
 const AboutTeam = async () => {
   return (
-    <section id="about-team" className="bg-white text-black text-3xl flex flex-col py-10 md:py-20">
+    <section
+      id="about-team"
+      className="bg-white text-black text-3xl flex flex-col py-10 md:py-20"
+    >
       <div className="container mx-auto px-11">
         <p className="text-xl leading-tight tracking-tight mx-auto lg:text-4xl">
           <strong>Nos dedicamos a crear aplicaciones web.</strong> Somos un
