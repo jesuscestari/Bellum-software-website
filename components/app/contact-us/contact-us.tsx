@@ -55,7 +55,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col justify-content items-center py-6 lg:py-6">
+    <div id="contact-us" className="min-h-screen bg-black text-white flex flex-col justify-content items-center py-6 lg:py-6">
       <div className="flex flex-1 flex-col justify-center items-center">
         <div className="pb-10">
           <Image src="/logo.png" width={30} height={30} alt="margelo logo" />

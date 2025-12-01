@@ -1,11 +1,45 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
 const WhatsAppButton = () => {
+  const [isVisible, setIsVisible] = useState(false);
   const phoneNumber = "5491173672568"; // Número de WhatsApp (formato: código de país + número sin + ni espacios)
   const message = "Hola, me gustaría obtener más información sobre sus servicios.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+  useEffect(() => {
+    // Buscar la primera sección después del hero (AboutTeam)
+    const firstSection = document.getElementById("about-team");
+    
+    if (!firstSection) return;
+
+    // Usar IntersectionObserver para detectar cuando la sección entra en el viewport
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          // Si la sección está visible en el viewport, mostrar el botón
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          }
+        });
+      },
+      {
+        // Trigger cuando al menos el 10% de la sección es visible
+        threshold: 0.1,
+      }
+    );
+
+    observer.observe(firstSection);
+
+    // Cleanup
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  if (!isVisible) return null;
 
   return (
     <a
