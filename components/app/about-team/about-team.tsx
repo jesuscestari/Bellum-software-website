@@ -27,7 +27,7 @@ const AboutTeam = async () => {
           <Member
             name="Jesus"
             image="/team/christoph-face.svg"
-            socialId="Product Developer / Full Stack"
+            socialId="Product Developer"
           />
           <Member
             name="Daniela"

@@ -155,6 +155,7 @@ return <div ref={mountRef} className="w-full h-full" />;
   const isLeft = side === 'left';
 
 return (
+
 <div
 className={`absolute w-[300px] md:w-[500px] h-[400px] z-0 opacity-80 pointer-events-none transition-transform duration-1000 ${
         // Ajustada la posición de la mano derecha para que salga desde la esquina inferior
@@ -199,6 +200,7 @@ style={{
 
 export default function App() {
 return (
+
 <div className="relative min-h-screen w-full bg-black text-white overflow-hidden font-sans selection:bg-purple-500 selection:text-white">
 
       {/* --- CSS Global Styles (for animations) --- */}
