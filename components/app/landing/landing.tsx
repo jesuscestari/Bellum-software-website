@@ -150,11 +150,11 @@ const LedHand = ({ side }: LedHandProps) => {
 
   return (
     <div
-      className={`absolute w-[200px] sm:w-[300px] md:w-[700px] h-[250px] sm:h-[350px] md:h-[500px] z-0 opacity-90 pointer-events-none transition-transform duration-1000 ${
+      className={`absolute w-[200px] sm:w-[300px] md:w-[350px] lg:w-[400px] xl:w-[500px] 2xl:w-[600px] h-[250px] sm:h-[350px] md:h-[300px] lg:h-[350px] xl:h-[400px] 2xl:h-[430px] z-0 opacity-90 pointer-events-none transition-transform duration-1000 ${
         // Mano izquierda centrada verticalmente, mano derecha desde esquina inferior derecha
         isLeft
-          ? "top-1/2 -translate-y-1/2 left-[-20px] sm:left-[-30px] md:left-0"
-          : "bottom-0 right-[-20px] sm:right-[-30px] md:right-0"
+          ? "top-1/2 -translate-y-1/2 left-[-20px] sm:left-[-30px] md:left-[-15px] lg:left-[-10px] xl:left-0"
+          : "bottom-0 right-[-20px] sm:right-[-30px] md:right-[-15px] lg:right-[-10px] xl:right-0"
       }`}
       style={{
         // Sutil animación de flotación usando CSS puro para rendimiento
@@ -245,7 +245,7 @@ const Landing = () => {
 
         {/* 3D Center Object - Ahora usando VanillaThreeScene */}
         {/* Estrella posicionada entre las manos */}
-        <div className="canvas-glow absolute top-[65%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[500px] md:h-[500px] z-10">
+        <div className="canvas-glow absolute top-[65%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[320px] md:h-[320px] lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px] 2xl:w-[450px] 2xl:h-[450px] z-10">
           <VanillaThreeScene />
         </div>
 
