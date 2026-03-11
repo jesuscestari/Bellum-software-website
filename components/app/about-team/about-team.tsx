@@ -12,14 +12,14 @@ const AboutTeam = async () => {
           constante.
         </p>
       </div>
-      <div className="container text-center mx-auto max-w-4xl px-4 md:px-6">
-        <div className="my-10">
+      <div className="container text-center mx-auto max-w-7xl px-6 md:px-10">
+        <div className="my-12 md:my-16">
           <h2>
             <strong className="text-4xl">Nuestro Equipo</strong>
           </h2>
           <p className="text-xl">the &ldquo;spec-ops&rdquo;</p>
         </div>
-        <section className="grid grid-cols-2 gap-8 sm:grid-cols-12 md:grid-cols-2 lg:grid-cols-2 lg:gap-20 pointer-events-none justify-items-center items-center justify-center mx-auto">
+        <section className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 lg:gap-16 pointer-events-none justify-items-center items-center justify-center mx-auto">
           <Member
             name="Jesus"
             image="/team/christoph-face.svg"
@@ -29,6 +29,16 @@ const AboutTeam = async () => {
             name="Daniela"
             image="/team/viktoria-face.svg"
             socialId="Marketing"
+          />
+          <Member
+            name="Luis"
+            image="/team/janic-face.svg"
+            socialId="Full-stack"
+          />
+          <Member
+            name="Alejandro"
+            image="/team/matei-face.svg"
+            socialId="Diseño"
           />
         </section>
       </div>

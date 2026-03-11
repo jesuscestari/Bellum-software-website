@@ -254,7 +254,7 @@ const Landing = () => {
         <div className="relative z-20 text-center max-w-4xl mx-auto mt-[-380px] md:mt-[-430px]">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-light leading-tight tracking-tight mb-4 text-white text-glow">
             <Typewriter
-              text="Desarrollo web definitivo"
+              text="Software definitivo"
               speed={40}
               className="inline-block"
             />

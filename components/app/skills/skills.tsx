@@ -45,7 +45,7 @@ const Skills = () => {
             className={styles.skills__text}
             style={{ opacity: opacityForBlock(progress, 0) }}
           >
-            Somos BELLUM. Desarrollo web definitivo.
+            Somos BELLUM. Software definitivo.
           </div>
           <span
             className={`${styles.skills__text} inline-block my-5 after:content-['_']`}

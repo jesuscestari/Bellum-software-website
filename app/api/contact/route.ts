@@ -1,12 +1,16 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: NextRequest) {
   try {
-    // Debug: Verificar que la API key existe
-    console.log("RESEND_API_KEY exists:", !!process.env.RESEND_API_KEY);
+    // Verificar que la API key está configurada antes de inicializar Resend
+    if (!process.env.RESEND_API_KEY) {
+      console.error("RESEND_API_KEY not configured");
+      return NextResponse.json(
+        { error: "Configuración del servidor incompleta" },
+        { status: 500 }
+      );
+    }
 
     const { companyName, email, message } = await request.json();
 
@@ -25,18 +29,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Verificar que la API key está configurada
-    if (!process.env.RESEND_API_KEY) {
-      console.error("RESEND_API_KEY not configured");
-      return NextResponse.json(
-        { error: "Configuración del servidor incompleta" },
-        { status: 500 }
-      );
-    }
-
     console.log("Attempting to send email...");
 
-    // Enviar el email usando Resend
+    // Inicializar Resend solo en runtime (evita error durante build)
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const data = await resend.emails.send({
       from: "Bellum Software <onboarding@resend.dev>",
       to: ["jescesta@gmail.com"],
