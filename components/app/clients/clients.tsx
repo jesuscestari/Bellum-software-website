@@ -17,9 +17,9 @@ const Clients = async () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          {/* Proyecto 1 - José Cestari */}
+          {/* Proyecto 1 - Takes by Us */}
           <a
-            href="https://josecestari.com"
+            href="https://www.takesbyus.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
@@ -27,19 +27,41 @@ const Clients = async () => {
             <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
               <Image
                 src="/projects/josecestari.webp"
-                alt="José Cestari"
+                alt="Takes by Us"
                 width={400}
                 height={300}
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-lg font-semibold mb-2">José Cestari</h3>
+            <h3 className="text-lg font-semibold mb-2">Takes by Us</h3>
             <p className="text-gray-600 text-sm">
-              Landing portfolio para un filmmaker
+              Sitio web moderno y elegante hecho a medida para Takes by Us.
             </p>
           </a>
 
-          {/* Proyecto 2 - Tiendea.app */}
+          {/* Proyecto 2 - Blend */}
+          <a
+            href="https://blend.training/es/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
+          >
+            <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+              <Image
+                src="/projects/blend.webp"
+                alt="Blend"
+                width={400}
+                height={300}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-lg font-semibold mb-2">Blend</h3>
+            <p className="text-gray-600 text-sm">
+              Capacitación que realmente mejora el desempeño
+            </p>
+          </a>
+
+          {/* Proyecto 3 - Tiendea.app */}
           <a
             href="https://tiendea.app"
             target="_blank"
@@ -61,7 +83,7 @@ const Clients = async () => {
             </p>
           </a>
 
-          {/* Proyecto 3 - Gaetano Seguros */}
+          {/* Proyecto 4 - Gaetano Seguros */}
           <a
             href="https://gaetanoseguros.com/"
             target="_blank"
@@ -80,28 +102,6 @@ const Clients = async () => {
             <h3 className="text-lg font-semibold mb-2">Gaetano Seguros</h3>
             <p className="text-gray-600 text-sm">
               Sitio web profesional para empresa de seguros.
-            </p>
-          </a>
-
-          {/* Proyecto 4 - Takes by Us */}
-          <a
-            href="https://www.takesbyus.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow block"
-          >
-            <div className="h-32 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-              <Image
-                src="/projects/takesbyus.webp"
-                alt="Takes by Us"
-                width={400}
-                height={300}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h3 className="text-lg font-semibold mb-2">Takes by Us</h3>
-            <p className="text-gray-600 text-sm">
-              Sitio web moderno y elegante hecho a medida para Takes by Us.
             </p>
           </a>
 
@@ -186,7 +186,7 @@ const Clients = async () => {
                 alt="Sitio de Bodas"
                 width={400}
                 height={300}
-                className="w-full h-full object-cover pointer-events-none"
+                className="w-full h-full object-cover"
               />
             </div>
             <h3 className="text-lg font-semibold mb-2">Sitio de Bodas</h3>
