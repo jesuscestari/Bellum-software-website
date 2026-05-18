@@ -1,6 +1,9 @@
 {
   "permissions": {
-    "allow": ["Bash(npm run build:*)"],
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(pnpm run *)"
+    ],
     "deny": [],
     "ask": []
   }

@@ -1,8 +1,8 @@
 import { createContext, useContext } from "react";
-import { EmblaCarouselType } from "embla-carousel";
+import type { UseEmblaCarouselType } from "embla-carousel-react";
 
 type CarouselContextType = {
-  embla: EmblaCarouselType | undefined;
+  embla: UseEmblaCarouselType[1];
   selectedIndex: number;
 };
 
