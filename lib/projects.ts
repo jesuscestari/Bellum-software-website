@@ -35,6 +35,14 @@ export const projects: Project[] = [
     category: "web",
   },
   {
+    id: "belfica",
+    title: "Belfica",
+    description: "Sitio web y apps hechas a medida para financiadora venezolana.",
+    href: "https://www.belfica.com/",
+    image: "/projects/belfica.webp",
+    category: "apps",
+  },
+  {
     id: "takesbyus",
     title: "Takes by Us",
     description: "Sitio web moderno y elegante hecho a medida para Takes by Us.",
@@ -89,14 +97,6 @@ export const projects: Project[] = [
     href: "https://conterradesarrollos.com/",
     image: "/projects/conterra-screenshot.webp",
     category: "web",
-  },
-  {
-    id: "belfica",
-    title: "Belfica",
-    description: "Sitio web y apps hechas a medida para financiadora venezolana.",
-    href: "https://www.belfica.com/",
-    image: "/projects/belfica.webp",
-    category: "apps",
   },
   {
     id: "sitio-bodas",
