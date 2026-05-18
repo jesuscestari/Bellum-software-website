@@ -6,25 +6,57 @@ export interface Project {
   description?: string;
   href: string;
   image?: string;
-  category: ProjectCategory;
+  category: ProjectCategory | ProjectCategory[];
 }
 
 export const projects: Project[] = [
+  {
+    id: "elmenu",
+    title: "elmenu.app",
+    description: "Sitio web y aplicacion hecha a medida.",
+    href: "https://elmenu.app/",
+    image: "/projects/elmenu.webp",
+    category: ["apps", "web"],
+  },
+  {
+    id: "lodatolab",
+    title: "Lodato Lab",
+    description: "Sitio web hecho a medida para Lodato Lab.",
+    href: "https://lodatolab.com",
+    image: "/projects/lodatolab.webp",
+    category: "web",
+  },
+  {
+    id: "hva-escritorio-juridico",
+    title: "HVA Escritorio Jurídico",
+    description: "Sitio web profesional para escritorio jurídico.",
+    href: "https://hvaescritoriojuridico.com/",
+    image: "/projects/hva.webp",
+    category: "web",
+  },
   {
     id: "takesbyus",
     title: "Takes by Us",
     description: "Sitio web moderno y elegante hecho a medida para Takes by Us.",
     href: "https://www.takesbyus.com/",
-    image: "/projects/josecestari.webp",
+    image: "/projects/takesbyus.webp",
     category: "web",
   },
   {
-    id: "blend",
-    title: "Blend",
-    description: "Capacitación que realmente mejora el desempeño",
-    href: "https://blend.training/es/",
-    image: "/projects/blend.webp",
-    category: "web",
+    id: "packwin",
+    title: "Pack.win",
+    description: "Plataforma digital donde puedes acceder a productos a través de experiencias interactivas.",
+    href: "https://pack.win",
+    image: "/projects/pack.win.webp",
+    category: "apps",
+  },
+  {
+    id: "invertir-belfica",
+    title: "Invertir Belfica",
+    description: "Plataforma de inversión hecha a medida para Belfica.",
+    href: "https://invertir.belfica.com/",
+    image: "/projects/invertir.belfica.webp",
+    category: "apps",
   },
   {
     id: "tiendea",
@@ -59,23 +91,11 @@ export const projects: Project[] = [
     category: "web",
   },
   {
-    id: "elmenu",
-    title: "elmenu.app",
-    description: "Sitio web y aplicacion hecha a medida.",
-    href: "https://elmenu.app/",
-    image: "/projects/engassistusa-screenshot.webp",
-    category: "apps",
-  },
-  {
-    id: "packwin",
-    title: "Pack.win",
-    href: "#",
-    category: "apps",
-  },
-  {
     id: "belfica",
     title: "Belfica",
-    href: "#",
+    description: "Sitio web y apps hechas a medida para financiadora venezolana.",
+    href: "https://www.belfica.com/",
+    image: "/projects/belfica.webp",
     category: "apps",
   },
   {

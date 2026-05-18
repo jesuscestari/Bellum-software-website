@@ -6,9 +6,12 @@ const Clients = async () => {
   return (
     <section className="min-h-screen bg-white text-black flex flex-col justify-center items-center py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16 lg:text-5xl">
-          Últimos Proyectos
+        <h2 className="text-4xl font-bold text-center mb-4 lg:text-5xl">
+          Portafolio
         </h2>
+        <p className="text-center text-gray-600 text-lg mb-16 max-w-2xl mx-auto">
+          Algunos de nuestros desarrollos más recientes
+        </p>
 
         <ProyectosTabs projects={projects} />
 

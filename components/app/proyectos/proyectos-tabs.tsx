@@ -1,13 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
-import type { Project, ProjectCategory } from "lib/projects";
-
-const tabs: { id: ProjectCategory; label: string }[] = [
-  { id: "web", label: "Desarrollo web" },
-  { id: "apps", label: "Apps" },
-];
+import type { Project } from "lib/projects";
 
 interface ProyectosTabsProps {
   projects: Project[];
@@ -41,32 +35,18 @@ const ProjectCard = ({ project }: { project: Project }) => (
 );
 
 export default function ProyectosTabs({ projects }: ProyectosTabsProps) {
-  const [activeTab, setActiveTab] = useState<ProjectCategory>("web");
-
-  const filteredProjects = projects.filter((p) => p.category === activeTab);
-
   return (
     <div className="w-full">
-      {/* Tabs */}
       <div className="flex justify-center gap-2 mb-12">
-        {tabs.map((tab) => (
-          <button
-            key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
-            className={`px-6 py-3 rounded-lg font-medium transition-colors ${
-              activeTab === tab.id
-                ? "bg-black text-white"
-                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-            }`}
-          >
-            {tab.label}
-          </button>
-        ))}
+        <button
+          className="px-6 py-3 rounded-lg font-medium bg-black text-white"
+        >
+          Desarrollos
+        </button>
       </div>
 
-      {/* Projects grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-        {filteredProjects.map((project) => (
+        {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
